@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>GENIE</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var setImg = '#photo';
+        var fadeSpeed = 0;
+        var switchDelay = 3000;
+
+        $(setImg).children('img').css({opacity:'0'});
+        $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+        setInterval(function(){
+            $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+        },switchDelay);
+    });
+    </script>
+  </head>
+  <body link="#FFD700" vlink="gray" alink="#FFD700">
+    <script type="text/javascript">
+    window.onload = function() {
+    let spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+  }
+    </script>
+    <div id="loading" class="box">
+      <center>
+        <span>Loading..</span>
+      </center>
+      </div>
+    <a href="index.html" class="GENIE_link">Top Page</a>
+    <center>
+      <img src="img/ロゴマーク.png" id="GENIE_logo">
+    </center>
+    <div id="photo" align="center">
+      <img src="img/GENIE_top.jpg" width="50%" alt="" />
+      <img src="img/GENIE_top2.jpg" width="50%" alt="" />
+      <img src="img/GENIE_top3.jpg" width="50%" alt="" />
+    </div>
+    <br clear="all">
+    <div id="GENIE_detail">
+      <h2>GENIEとは？</h2>
+      <p>インパクトゼミ内で2019年9月<br>に設立されたグループ。
+      <br>主な活動内容はビジネスコンテストや<br>アイデアコンテストへの出場</p>
+    </div>
+      <br clear="all">
+      <h1 class="GENIE_title">History</h1>
+      <ul>
+        <li>2019年10月　GENIE結成</li>
+        <li>2019年11月　キャリア甲子園優勝を目標にする</li>
+        <li>2019年12月　キャリア甲子園1次審査通過</li>
+        <li>2019年12月　年末デスマ</li>
+        <li>2020年 1月　キャリア甲子園2時審査通過</li>
+        <li>2020年 1月　関西SDGsユースアイデアコンテスト1次審査通過</li>
+        <li>2020年 2月　キャリア甲子園準決勝勝利</li>
+        <li>2020年 3月　キャリア甲子園決勝中止</li>
+        <li>2020年 3月　関西SDGsユースアイデアコンテスト延期</li>
+        <li>2020年 3月　ワンダリングチャレンジ参加</li>
+      　<li>2020年 5月　SW LIVE出演</li>
+      　<li>2020年 5月　ビヨンドコロナコンテスト主催</li>
+      　<li>2020年 6月　MBSミント取材</li>
+      　<li>2020年 7月　NHK取材</li>
+      　<li>2020年 7月　いったん活動休止</li>
+      　<li>2020年 8月　関西SDGsユースアイデアコンテストオーディエンス賞獲得</li>
+      　<li>2020年 8月　学校説明会でのプレゼン</li>
+      　<li>2020年10月　再結成</li>
+      　<li>2020年11月　STEAM JAPAN AWARD 2020一次審査通過</li>
+    </ul>
+    <h1 class="GENIE_title">GENIEについてもっと知る</h1>
+    <center>
+    <a href="https://impact-rits.github.io/genie.github.io/" class="GENIE_link">Read More</a>
+  </center>
+<h1 class="GENIE_title">関連動画</h1>
+  <iframe width="50%"  src="https://www.youtube.com/embed/jgbKLSDK4q8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </body>
+</html>

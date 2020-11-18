@@ -1,0 +1,184 @@
+.box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+          transition: all 1.5s ease;
+  color: white;
+  font-size: 50px;
+  background-color: #A9A9A9;
+  padding-top: 300px;
+}
+.box.loaded{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+}
+article img{
+  float: left;
+  width:50%;
+overflow: hidden;
+
+}
+#top_title {
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  background-color: #A9A9A9;}
+
+#top_h1{
+  color: white;
+  font-size: 50px;
+  font-family:  Meiryo;
+}
+#top_title{
+  color: white;
+  font-size: 35px;
+  font-family:  Meiryo;
+}
+#train{
+}
+#GENIE{
+}
+#AEGIS{
+
+}
+#PS{
+
+}
+#other{
+
+}
+.main p{
+  font-size: 25px;
+}
+.main h2{
+  font-size: 50px;
+}
+.introduce_me{
+  width: 100%;
+  background: #000;
+}
+.introduce_me img:hover{
+opacity: 0.4;
+transform: scale(1.03);
+transition-duration: 0.3s;
+}
+.introduce_me img{
+  transition-duration: 0.3s;
+}
+/*---------------------------------ここから鉄道ページ---------------------------*/
+#train_header{
+  background-image: url(img/train_header.jpg);
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: white;
+  font-size: 35px;
+}
+#train_body{
+  background-color: #000033;
+}
+#train_sub_title img{
+  margin-top: 10px;
+  width: 40%;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+#train_sub_title_text{
+  color: white;
+  float: left;
+  padding-top: 80px;
+  font-size: 30px;
+}
+#train_detail{
+  margin-top: 50px;
+  color: white;
+  clear: left;
+  font-size: 30px;
+  border-left-style: solid;
+  border-left-color: gray;
+  border-left-width: 10px;
+  margin-left: 20px;
+}
+#text_p{
+  color: white;
+  clear: left;
+  margin-left: 20px;
+}
+.detail_photo img{
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.detail_text{
+  color: white;
+  margin-left: 300px;
+  margin-bottom: 50px;
+}
+#go_top{
+  list-style-type: none;
+  font-size: 50px;
+  margin-top: 20px;
+}
+/*------------------------------ここからGENIE------------------------------*/
+#GENIE_logo{
+  width: 60%;
+  margin-top: 50px;
+}
+#GENIE_detail{
+  background-color: #FF8C00;
+  margin-left: 20px;
+  padding: 15px;
+  margin-right: 55%;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 100px;
+}
+#photo{
+  overflow: hidden;
+  margin-right: 20px;
+}
+#photo img{
+  position: absolute;
+  border-radius: 20px;
+}
+.GENIE_title{
+  margin-left: 20px;
+  border-left-style: solid;
+  border-left-color: #FF8C00;
+  border-left-width: 10px;
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+li{
+  list-style-type: none;
+  font-size: 20px;
+}
+ul{
+  background-color: #FF8C00;
+  color: white;
+  padding: 15px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+.GENIE_link{
+  font-size: 30px;
+  border-style: solid;
+  border-color: #FFD700;
+  border-width: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+ a:hover{
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background: #663300;
+  clear: left;
+}
