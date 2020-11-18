@@ -22,11 +22,30 @@ article img{
 overflow: hidden;
 
 }
+@keyframes fadeIn {
+
+  0% {opacity: 0}
+
+  100% {opacity: 1}
+
+}
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 #top_title {
   margin: 0;
   padding: 0;
   font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  background-color: #A9A9A9;}
+  background-color: #A9A9A9;
+  animation: fadeIn 2s linear 0.3s 1 normal;
+}
 
 #top_h1{
   color: white;
@@ -68,6 +87,7 @@ transition-duration: 0.3s;
 }
 .introduce_me img{
   transition-duration: 0.3s;
+  animation: SlideIn 1.5s;
 }
 /*---------------------------------ここから鉄道ページ---------------------------*/
 #train_header{
@@ -77,6 +97,7 @@ transition-duration: 0.3s;
   padding-bottom: 150px;
   color: white;
   font-size: 35px;
+  animation: SlideIn 1.5s;
 }
 #train_body{
   background-color: #000033;
@@ -127,6 +148,7 @@ transition-duration: 0.3s;
 #GENIE_logo{
   width: 60%;
   margin-top: 50px;
+  animation: SlideIn 1.5s;
 }
 #GENIE_detail{
   background-color: #FF8C00;
@@ -137,10 +159,12 @@ transition-duration: 0.3s;
   border-radius: 20px;
   color: white;
   margin-bottom: 100px;
+  animation: SlideIn 1.5s;
 }
 #photo{
   overflow: hidden;
   margin-right: 20px;
+
 }
 #photo img{
   position: absolute;
@@ -179,6 +203,6 @@ ul{
 
 footer {
   text-align: center;
-  background: #663300;
+  background: gray;
   clear: left;
 }
